@@ -1,0 +1,35 @@
+modLoader = "javafml"
+loaderVersion = "[40,)"
+#issueTrackerURL = ""
+license = "MIT"
+
+[[mods]]
+modId = "block_usage_ticker"
+version = "${version}"
+displayName = "Block Usage Ticker"
+authors = "Supersonicboss1"
+description = '''
+Adds a tooltip to show the total number of a given block in your inventory when that block is held in your hand, if you have more than one stack in your inventory.
+'''
+#logoFile = ""
+
+[[dependencies.block_usage_ticker]]
+modId = "forge"
+mandatory = true
+versionRange = "[40,)"
+ordering = "NONE"
+side = "CLIENT"
+
+[[dependencies.block_usage_ticker]]
+modId = "minecraft"
+mandatory = true
+versionRange = "[1.18.2,)"
+ordering = "NONE"
+side = "CLIENT"
+
+[[dependencies.block_usage_ticker]]
+modId = "architectury"
+mandatory = true
+versionRange = "[4.12.94,)"
+ordering = "AFTER"
+side = "CLIENT"
